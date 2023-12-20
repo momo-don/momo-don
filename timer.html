@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="countdown..css">
+</head>
+<body>
+    <div class="headingDiv">
+        <h1 id="heading">
+            This Page will open after
+        </h1>
+    </div>
+    <div id="countdownContainer">
+        <h1 id="countdown"></h1>
+        <button id="redirectButton" style="display:none;" onclick="redirectToNewPage()">Click Here 🥳</button>
+    </div>
+
+    <script>
+        // Set the date and time for the countdown (replace with your desired date and time)
+        var countDownDate = new Date("Dec 20, 2023 21:05:00").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // Check if the countdown is over
+            if (distance <= 0) {
+                clearInterval(x);
+                document.getElementById("redirectButton").style.display = "block";
+                document.querySelector("#heading").innerText="Now open your Surprise 😁"
+                document.querySelector("#countdown").style="display:none";
+                
+            } else {
+                // Calculate days, hours, minutes, and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the countdown
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            }
+        }, 1000);
+
+        function redirectToNewPage() {
+            // Redirect to a new page
+            window.location.href = "main.html";
+        }
+    </script>
+</body>
+</html>
