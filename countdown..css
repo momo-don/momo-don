@@ -28,7 +28,8 @@ color: rgb(0, 0, 0);
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 10vmax;
+    height: 20vmax;
+    text-align: center;
     width: 100%;
     color: rgb(0, 0, 0);
 }
