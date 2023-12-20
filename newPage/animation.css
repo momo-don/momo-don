@@ -1,0 +1,78 @@
+@keyframes blink {
+    
+    0%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.73);
+    }
+    60%{
+        color: rgba(255, 255, 255, 0.484);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.326);
+    }
+    70%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.73);
+    }
+    80%{
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0);
+    }
+    81%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.73);
+    }
+    82%{
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0);
+    }
+    83%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.73);
+    }
+    84%{
+        
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0);
+        
+    }
+    
+    85%{
+        color: rgba(255, 255, 255);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.73);
+        
+    }
+    86%{
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0);
+        
+    }
+    87%{
+        
+        color: rgba(255, 255, 255);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.73);
+        
+    }
+   
+    88%{
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0);
+        
+    }
+    93%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.73);
+        
+    }
+
+    94%{
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0);
+        
+    }
+    100%{
+        color: rgba(255, 255, 255);
+        text-shadow: 0.3vmax 0.3vmax 0.5vmax rgba(0, 0, 0, 0.73);
+        
+    }
+
+  }
+  
