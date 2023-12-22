@@ -1,0 +1,86 @@
+.header{
+    height: 7vmax;
+    width: 90%;
+    margin-top: 1.5vmax;
+    margin-bottom: 1.5vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20vmax;
+    box-shadow: inset 0.2vmax 0.2vmax 0.5vmax black;
+    box-shadow:inset 0.5vmax 0.5vmax 0.5vmax rgba(0, 0, 0, 0.751);
+  }
+  .logoDiv{
+    height: 5vmax;
+    width: 4vmax;
+    margin: 0 0 0 2vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .girlLogo{
+    height: 4vh;
+    -webkit-filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
+    filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
+    cursor: pointer;
+  }
+  .menuDiv{
+    height:3vmax;
+    width:6vmax;
+    display: flex;
+    align-items: center;
+  }
+  .menuBtn{
+    height: 4vmax;
+    width: 4vmax;
+    border: none;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
+    filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
+  }
+  #menuBtn{
+    background-color: #af704c00;
+    border: none;
+    
+  }
+  #menu{
+    display: none;
+    position: absolute;
+    right: 2vmax;
+    top:10vmax;
+  }
+  #menu ul{
+    display:flex;
+    height: 10vmax;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: left;
+    border:0.1vmax solid rgba(0, 0, 0, 0.323);
+    border-radius: 2vmax;
+    background-color: #f1f1f1;
+    box-shadow: 0.3vmax 0.3vmax 0.5vmax  rgba(0, 0, 0, 0.527);
+    padding: 1vmax;
+  }
+  #menu ul li a{
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .footer{
+    height: 4vmax;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    letter-spacing: 0.1vmax;
+    font-size: 1.5vmax;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .theme{
+    background-color: rgba(113, 113, 113, 0.743);
+  }
