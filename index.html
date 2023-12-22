@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoMo Ka Bday 🥳</title>
-    <link rel="stylesheet" href="countdown..css">
-</head>
-<body>
-    <div class="headingDiv">
-        <h1 id="heading">
-            This Page will open after
-        </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoMo</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="indexMain.css" />
+    <link rel="stylesheet" href="indexNav.css">
+  </head>
+  <body>
+    <main>
+      <section class="mainSec">
+    <header class="header theme">
+      <div class="logoDiv">
+        <img class="girlLogo" src="girl.png" alt="👧" />
+      </div>
+      <div class="menuDiv">
+      <button id="menuBtn">
+        <img class="menuBtn" src="menu.gif" alt="❤️" />
+      </button>
     </div>
-    <div id="countdownContainer">
-        <h1 id="countdown"></h1>
-        <button id="redirectButton" style="display:none;" onclick="redirectToNewPage()">Click Here 🥳</button>
-    </div>
+<div id="menu">
+    <ul>
+        <li><a href="/special.html">Special</a></li>
+        <hr>
+        <li><a href="/mainWeb.html">Birthday</a></li>
+    </ul>
+    
+</div>
+    </header>
 
-    <script>
-        // Set the date and time for the countdown (replace with your desired date and time)
-        var countDownDate = new Date("Dec 21, 2023 24:00:00").getTime();
+    <section class="mainSec2">
+      <div class="textDiv">
+        <h2>Moumita Biswas Ki Website Hai ... 👽😼</h2>
+      </div>
+    </section>
+  
+    <footer class="footer theme">
+      <p>Made with ❣️for <span>Moumita Biswas</span>🥳</p>
+    </footer>
+  </section>
+  </main>
 
-        // Update the countdown every 1 second
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            // Check if the countdown is over
-            if (distance <= 0) {
-                clearInterval(x);
-                document.getElementById("redirectButton").style.display = "block";
-                document.querySelector("#heading").innerText="Now open your Surprise 😁"
-                document.querySelector("#countdown").style="display:none";
-                
-            } else {
-                // Calculate days, hours, minutes, and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Display the countdown
-                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-            }
-        }, 1000);
-
-        function redirectToNewPage() {
-            // Redirect to a new page
-            window.location.href = "newPage/mainWeb.html";
-        }
-    </script>
-</body>
+    
+    <script src="index.js"></script>
+  </body>
 </html>
