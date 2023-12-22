@@ -36,8 +36,6 @@
     width: 4vmax;
     border: none;
     cursor: pointer;
-    -webkit-filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
-    filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
   }
   #menuBtn{
     background-color: #af704c00;
