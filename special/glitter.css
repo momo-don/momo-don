@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} 
+.glitter {
+  position: absolute;
+  width: 0.5vmax;
+  height:0.3vmax;
+  border-radius: 20vmax;
+  z-index: 0;
+  opacity: 0;
+  animation: glitter-fall 2s infinite linear, glitter-shimmer 2s infinite alternate;
+}
+
+@keyframes glitter-fall {
+  0% {
+    transform: translateY(-20);
+    
+    
+  }
+  100% {
+    transform: translateY(50vh);
+   
+  }
+}
+
+@keyframes glitter-shimmer {
+  0%, 100% {
+    opacity: 0;
+    rotate: y 0deg;
+  }
+  50% {
+    opacity: 1;
+    rotate: y 180deg;
+  }
+}
+.audioDiv{
+  height: 10vmax;
+  width: 100%;
+  position: absolute;
+  top:10vmax;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width:900px)
+{
+ 
+  .audioDiv{
+    bottom:0vmax;
+  }
+  .birthdayText {
+    font-size: 4vmax;
+  }
+  .birthdayText{
+    height:10vmax;
+    width: 50vmax;
+    top: 10vmax;
+  
+    box-shadow: 0.3vmax 0.3vmax 0.3vmax rgba(255, 0, 0, 0.435);
+  }
+}
+@media (max-width:900px)
+{
+  body{
+    background-image: url(/bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+footer{
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  z-index :99;
+  color: white;
+  background-color: #0000006d;
+}

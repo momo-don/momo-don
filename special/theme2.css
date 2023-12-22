@@ -1,0 +1,52 @@
+.header{
+    height: 7vmax;
+    width: 90%;
+    position: absolute;
+    top: 1vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20vmax;
+    box-shadow: inset 0.2vmax 0.2vmax 0.5vmax black;
+    box-shadow:inset 0.5vmax 0.5vmax 0.5vmax rgba(0, 0, 0, 0.751);
+}
+  .logoDiv{
+    height: 5vmax;
+    width: 4vmax;
+    margin: 0 0 0 2vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .girlLogo{
+    height: 4vh;
+    -webkit-filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
+    filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
+    cursor: pointer;
+  }
+  .playPauseDiv{
+    height:3vmax;
+    width:6vmax;
+    display: flex;
+    align-items: center;
+  }
+  #audioControl {
+    display: none;
+  }
+
+  .playPauseBtn {
+    height: 4vmax;
+    width: 4vmax;
+    border: none;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
+    filter: drop-shadow(0.2vmax 0.2vmax 0.3vmax black);
+  }
+  #playPauseBtn{
+    background-color: #af704c00;
+    border: none;
+  }
+  .theme{
+    background-color: rgba(113, 113, 113, 0.743);
+  }
